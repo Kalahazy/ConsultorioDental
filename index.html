@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Diente Feliz</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
 </head>
-<body>
-    <center><header>
-        <img src="Images/consultorio.jpg" alt="" height="200">
-    </header></center>
 
-    <center><h1 style="color: rgb(29, 197, 166); font-size: 50px;" >
+<body>
+    <header>
+        <img class="consultorio" src="./assets/img/consultorio.jpg" alt="" height="200">
+    </header>
+
+    <h1>
         Consultorio Dental "El Diente Feliz"
-    </h1></center>
+    </h1>
 
     <hr>
     <h2>
@@ -22,13 +25,19 @@
     <div>
         Graduado de la Facultad de Odontología de la UNAM Generación 1961-1965
         <div>
-            <span style="color: blue;">Cédula profesional 175385 D.G.P.</span>
+            <span id="cedula">Cédula profesional 175385 D.G.P.</span>
         </div>
         Autorización COFEPRIS 213300201A1501
     </div>
-    <center>
-        <img src="Images/doctor.jpg" alt="Foto Dr. Jairo Campos" width="200">
-    </center>
+    <img class="consultorio" src="./assets/img/doctor.jpg" alt="Foto Dr. Jairo Campos" width="200">
+    <div class="contenedor">
+        <h3 class="tituloContenedor">
+            Quienes Somos?
+        </h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut maiores voluptate ab magni, similique sequi et perspiciatis, sed unde quo dolore esse, optio perferendis cum obcaecati eaque eum quia repudiandae.
+        </p>
+    </div>
 
     <h2>
         Servicios
@@ -42,43 +51,54 @@
         <li>Tratamiento de caries</li>
         <li>Brackets</li>
     </ul>
-    <img src="https://images.pexels.com/photos/3762453/pexels-photo-3762453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="400">
+    <img class="consultorio" src="https://images.pexels.com/photos/3762453/pexels-photo-3762453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="400">
 
     <hr>
-    <h3 style="color: rgb(29, 197, 166); font-size: 30px;">
+    <h2>
         Horarios de atención
-    </h3>
+    </h2>
     <ul>
         <li>Lunes a Viernes 9:00 am - 6:00 pm</li>
         <li>Sábados 9:00 am - 2:00 pm</li>
     </ul>
-    <img src="https://i.pinimg.com/564x/56/fc/07/56fc07af3dc1b2350a8e7b0a6f035730.jpg" alt="" width="400">
+    <img class="consultorio" src="https://i.pinimg.com/564x/56/fc/07/56fc07af3dc1b2350a8e7b0a6f035730.jpg" alt="" width="400">
 
     <hr>
-    <h3 style="color: rgb(29, 197, 166); font-size: 30px;">
+    <h2>
         Ubicación
-    </h3>
-    <p>
-        Blvd. Miguel de Cervantes Saavedra, Granada, Miguel Hidalgo, 11529 Ciudad de México, CDMX
-    </p>
-    <a href="https://goo.gl/maps/CQ5NR1uy9rd7TRkU7" target="_blank">
-        <img src="Images/ubicacion.jpg" alt="" width="600">
-    </a>
+    </h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1881.1777139480823!2d-99.2041971!3d19.4402368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2021a843d2a1b%3A0xe7656ed95e724022!2sBlvd.%20Miguel%20de%20Cervantes%20Saavedra%2C%20Granada%2C%2011529%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1692918739399!5m2!1ses-419!2smx" width=100% height=500 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <hr>
-    <h3 style="color: rgb(29, 197, 166); font-size: 30px;">
+    <h2>
         Contacto
-    </h3>
-    <a href="https://web.whatsapp.com/send/?phone=%2B524422015462&text&type=phone_number&app_absent=0" target="_blank">
-        <img src="Images/whatsapp-logo.png" alt="" width="200">
-    </a>
+    </h2>
+    <div class="logosContenedor">
+        <div class="logo">
+            <a href="https://web.whatsapp.com/send/?phone=%2B524422015462&text&type=phone_number&app_absent=0" target="_blank">
+                <img src="./assets/img/whatsappLogo.png" alt="" width="150">
+            </a>
+        </div>
+        <div class="logo">
+            <a href="https://www.instagram.com/ConsultorioElDienteFeliz/">
+                <img src="./assets/img/instagramLogo.png" alt="" width="150">
+            </a>
+        </div>
+        <div class="logo">
+            <a href="https://www.facebook.com/ConsultorioElDienteFeliz">
+                <img src="./assets/img/facebookLogo.png" alt="" width="150">
+            </a>
+        </div>
+    </div>
     <hr>
 
-    <footer style="background-color: rgba(212, 176, 247, 0.642); font-size: 20px;">
+    <footer>
         Agenda tus análisis con nuestros amigos de
         <a href="https://www.dentalzirtech.com/" target="_blank">
-            <span style="font-weight: bold;">Laboratorio Dental Zirtech</span>
+            <span id="laboratorio">Laboratorio Dental Zirtech</span>
         </a>
     </footer>
+
 </body>
+
 </html>
