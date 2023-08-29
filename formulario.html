@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Cita</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+    <header>
+        <img class="consultorio" src="./assets/img/consultorio.jpg" alt="" height="200">
+    </header>
+
+    <h1>
+        Consultorio Dental "El Diente Feliz"
+    </h1>
+    <h2>
+        Bienvenido a nuestro formulario de citas en línea
+    </h2>
+
+    <h2>
+        <form action="formularioCita">Agenda tu cita</form>
+    </h2>
+
+    <div class="formContender">
+        <label for="user">Nombre Completo</label> <br>
+        <input type="text" name="nombre" placeholder="Nombre(s)">
+        <input type="text" name="apellido1" placeholder="Apellido Materno">
+        <input type="text" name="apellido2" placeholder="Apellido Paterno">
+        <br>
+        <br>
+
+        <table>
+            <tr>
+                <th>
+                    <label for="userTel">Número de Teléfono</label> <br>
+                    <input type="tel" name="telefono" placeholder="ej. 7751234567" maxlength="10">
+                </th>
+                <th>&nbsp;&nbsp;</th>
+                <th>
+                    <label for="userMail">Correo Electrónico</label> <br>
+                    <input type="email" name="correo" placeholder="ej. user@mail.com">
+                </th>
+            </tr>
+        </table>
+        <br>
+        
+        <table>
+            <tr>
+                <th>
+                    <label for="services">Servicio a solicitar:</label> <br>
+                    <select name="seleccion">
+                        <option value="" disabled selected>Selecciona un Servicio</option>
+                        <option value="limpiezaDental">Limpieza Dental</option>
+                        <option value="tratamientoCaries">Tratamiento de Caries</option>
+                        <option value="blanqueamiento">Blanqueamiento</option>
+                        <option value="ortodoncia">Ortodoncia</option>
+                        <option value="extracciones">Extracciones</option>
+                        <option value="esteticaDental">Estética Dental</option>
+                        <option value="endodoncia">Endodoncia</option>
+                        <option value="radiografía">Radiografía</option>
+                    </select>
+                </th>
+                <th>&nbsp;&nbsp;</th>
+                <th>
+                    <label for="date">Fecha de cita:</label> <br>
+                    <input type="date" name="fecha" min="2023-08-29" max="2023-12-31">
+                </th>
+                <th>&nbsp;&nbsp;</th>
+                <th>
+                    <label for="time">Hora de cita:</label> <br>
+                    <input type="time" name="hora" min="09:00" max="18:00">
+                </th>
+            </tr>
+        </table>
+        <br>
+        
+        <textarea name="comentarios" cols="50" rows="8" placeholder="Comentarios / Observaciones"></textarea>
+        <br>
+        <br>
+
+        <button type="submit">Agendar cita</button>
+
+    </div>
+
+</body>
+</html>
