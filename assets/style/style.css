@@ -1,5 +1,5 @@
 body {
-    background: #CDFFFA;;
+    background: #CDFFFA;
     background: -moz-radial-gradient(center, #CDFFFA 0%, #FBFFD2 100%);
     background: -webkit-radial-gradient(center, #CDFFFA 0%, #FBFFD2 100%);
     background: radial-gradient(ellipse at center, #CDFFFA 0%, #FBFFD2 100%);
@@ -102,6 +102,30 @@ table {
     font-size: 20px;
     font-weight: 700;
     color: #0a1930;
+}
+
+.navbar {
+    background-color: #6CB3B6;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.row .col-lg-8 {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.row .card-title {
+    text-align: left;
+    font-weight: 900;
 }
 
 #cedula {
