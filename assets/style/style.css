@@ -136,3 +136,9 @@ table {
     font-size: 25px;
     font-weight: 900;
 }
+
+@media (min-width: 768px) { /*se aplique solo a pantallas medianas y grandes*/
+    .navbar-nav .nav-item {
+        margin-right: 10px;
+    }
+}
